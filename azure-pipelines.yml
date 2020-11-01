@@ -10,14 +10,6 @@
       }
     urlSuffix: '/incidents'
     waitForCompletion: 'false'
-- task: restCallBuildTask@0
-  inputs:
-    webserviceEndpoint: 'TOPdesk'
-    relativeUrl: '/incidents'
-    httpVerb: 'GET'
-    contentType: 'application/json'
-    saveResponseToFile: true
-    allowInvalidSSLCertificate: false
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
