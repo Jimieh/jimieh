@@ -6,8 +6,7 @@
     method: 'GET'
     headers: |
       {
-      "Content-Type":"application/json", 
-      "Authorization":"ccdsfsdfsdfsdfsdfsdfdsfc"
+      "Content-Type":"application/json"
       }
     urlSuffix: '/incidents'
     waitForCompletion: 'false'
