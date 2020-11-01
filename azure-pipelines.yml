@@ -1,4 +1,16 @@
 # Starter pipeline
+- task: InvokeRESTAPI@1
+  inputs:
+    connectionType: 'connectedServiceName'
+    serviceConnection: 'TOPdesk'
+    method: 'GET'
+    headers: |
+      {
+      "Content-Type":"application/json", 
+      "Authorization":"ccdsfsdfsdfsdfsdfsdfdsfc"
+      }
+    urlSuffix: '/incidents'
+    waitForCompletion: 'false'
 - task: restCallBuildTask@0
   inputs:
     webserviceEndpoint: 'TOPdesk'
